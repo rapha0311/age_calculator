@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/styles.css">
+
+  <title>Age calculator app</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <form id="calculator-box">
+      <div class="inputs">
+        <div class="input-day">
+          <p class="input-title">Day</p>
+          <input type="number" name="day" id="dayInput"  placeholder="DD">
+          <div class="error-message" id="dayError"></div>
+        </div>
+        <div class="input-month">
+          <p class="input-title">Month</p>
+          <input type="number" name="month" id="monthInput"  placeholder="MM">
+          <div class="error-message" id="monthError"></div>
+        </div>
+        <div class="input-year">
+          <p class="input-title">Year</p>
+          <input type="number" name="year" id="yearInput"  placeholder="YYYY">
+          <div class="error-message" id="yearError"></div>
+        </div>
+      </div>
+      <div class="line-separator">
+        <span class="line"></span>
+        <button type="submit" class="icon">
+          <img src="./src/images/icon-arrow.svg" width="38px" alt="arrow separtor line">
+        </button>
+      </div>
+      <div class="results">
+        <div class="years">
+          <span>--</span>
+          <p>years</p>
+        </div>
+        <div class="months">
+          <span>--</span>
+          <p>months</p>
+        </div>
+        <div class="days">
+          <span>--</span>
+          <p>days</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Raphael Alves</a>.
+  </div>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
